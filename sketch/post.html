@@ -4,10 +4,20 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     overflow: hidden;
     background-color: rgb(224, 134, 24);
 }
@@ -51,10 +61,6 @@
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-    border-radius: 5px 5px 0 0;
 }
 
 .container {
@@ -171,6 +177,20 @@ input::-moz-focus-inner {
 .fa-instagram {
   color: #FFC072;
 }
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.base-image{
+  width: 100%;
+}
+
+.content {
+  padding: 8px;
+}
 </style>
 </head>
 <body>
@@ -182,95 +202,24 @@ input::-moz-focus-inner {
     <li><a href="#contact">Contact</a></li>
     <li style="float:right"><a href="#about">About</a></li>
 </ul>
-
-
-<form class="form-search">
-  <div class="form-search-wrapper">
-    <input type="text" class="form-search-field" placeholder="Search.." spellcheck="false">
-    <input type="submit" class="form-search-submit" value="">
-  </div>
-</form>
-
-<div class="card-latest">
-  <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>LATEST CARD</b></h4> 
-  </div>
-</div>
-
-<div class="links">
-	<ul class="flex-container wrap">
-    	<li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4>
-            <a href="post.html">link</a>
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-              
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li>
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li class="flex-item">
-      <li class="flex-item">
-        <div class="card">
-          <img src="img_avatar2.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Food Name</b></h4> 
-          </div>
-        </div>
-      </li>
-    </ul>
-</div>
+<section><img src="img_avatar2.jpg" alt="Avatar" class="base-image" ></section>
+<section class="content">
+    <section>
+      <h1 class='title'>Title</h1>
+    </section>
+    <section>
+      <h2 class='ing'>Ingredients</h2>
+    </section>
+    <section>
+      <h2 class='steps'>Steps</h2>
+    </section>
+</section>
 
 
 
+<!-- ingredients
+
+steps -->
 <div class="footer">
   <p style="display: contents;">Follow us on: </p>
   <a href="#" class="fa fa-facebook"></a>
